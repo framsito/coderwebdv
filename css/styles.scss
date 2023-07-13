@@ -1,0 +1,184 @@
+$color1: #9DCCED;
+$color2: white;
+$color3: #ccc;
+$color4: #f9f9f9;
+$color5: #106cfc;
+$color6: blue;
+$color7: #45a049;
+$color8: #cce4fc;
+$color9: #f0ecec;
+$color10: #e8e8e8;
+
+//paleta
+
+
+$sm: 1px;
+$md: 5px;
+$mds: 10px;
+$lg: 20px;
+$xlg: 30px;
+$xxlg: 50px;
+$zero: 0px;
+$cien: 100%;
+
+
+//sizes
+
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background-color: $color1;
+    padding: $lg;
+    border-radius: $md;
+    margin-top: $lg;
+}
+
+.table-title {
+    text-align: center;
+    margin-bottom: $lg;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+
+    .navbar-icon {
+        margin-left: $mds;
+
+        img {
+            width: $xxlg;
+            height: $xlg;
+        }
+    }
+}
+
+.navbar-nav li:hover .nav-link {
+    font-size: 18px;
+}
+
+.navbar-nav li:hover img {
+    transform: scale(1.2);
+}
+
+.navbar-nav li .nav-link,
+.navbar-nav li img {
+    transition: all 0.3s ease;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: $zero auto;
+    padding: $lg;
+    border: $sm solid $color3;
+    border-radius: $mds;
+    background-color: $color4;
+
+    h1 {
+        margin-bottom: $lg;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: $cien;
+        padding: $mds;
+        border: $sm solid $color5;
+        border-radius: $md;
+        box-sizing: border-box;
+        margin-bottom: $lg;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    button[type="submit"] {
+        background-color: $color6;
+        color: $color2;
+        padding: $mds $lg;
+        border: $zero;
+        border-radius: $md;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color7;
+        }
+    }
+}
+
+.bottom {
+    margin-bottom: $lg;
+}
+
+.custom-table {
+    width: $cien;
+    margin: $zero auto;
+    border-collapse: collapse;
+    background-color: $color2;
+
+    th,
+    td {
+        padding: $mds;
+        border: $sm solid $color3;
+    }
+
+    th {
+        background-color: $color8;
+    }
+
+    tbody {
+        tr:hover {
+            background-color: $color9;
+        }
+    }
+}
+
+.gap-zero {
+
+    grid-column-gap: $zero;
+}
+
+.align-right {
+
+    text-align: right;
+}
+
+.col-md-2 {
+    background-color: $color10;
+    padding: $lg;
+    border-radius: $md;
+}
+
+.img-container {
+    width: $cien;
+}
