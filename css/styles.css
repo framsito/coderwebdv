@@ -136,4 +136,26 @@ body {
 
 .img-container {
   width: 100%;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.footer {
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+.footer p {
+  margin: 1px;
+}
+
+.black {
+  background-color: #cce4fc;
+}
+
+@media (max-width: 767px) {
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

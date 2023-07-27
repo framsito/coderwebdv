@@ -8,6 +8,7 @@ $color7: #45a049;
 $color8: #cce4fc;
 $color9: #f0ecec;
 $color10: #e8e8e8;
+$color11: black;
 
 //paleta
 
@@ -181,4 +182,27 @@ body {
 
 .img-container {
     width: $cien;
+}
+
+.footer {
+    color: black;
+    padding: $lg;
+    text-align: center;
+
+    p {
+        margin: $sm;
+
+    }
+}
+
+.black {
+
+    background-color: $color8;
+}
+
+@media (max-width: 767px) {
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
 }
